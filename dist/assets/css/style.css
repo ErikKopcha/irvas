@@ -633,10 +633,25 @@ textarea:focus {
   min-height: 7rem;
 }
 
-.guarantees_block:hover {
+.faded {
+  animation-name: faded;
+  animation-duration: 1s;
+}
+
+@keyframes faded {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* .guarantees_block:hover {
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
+} */
 
 /*Payment*/
 .payment {
